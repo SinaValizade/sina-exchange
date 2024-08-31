@@ -1,23 +1,20 @@
 //@ts-ignore
 import {configureStore, createSlice} from '@reduxjs/toolkit';
 
-const userSlice = createSlice({
+
+const userSlice : any = createSlice ({
     name: "sinaExcgange",
     initialState: {
-        cryptoPrice: [],
-        cryptoImg: []
+        cryptoData: []
     },
     reducers: {
-        SetCryptoPrice: (state, action) => {
-            state.cryptoPrice = action.payload.price
-        },
-        SetCryptoImg: (state, action) => {
-            state.cryptoImg = action.payload.img
+        data:(state:any, action:any) => {
+            state.cryptoData = action.payload.addData;
         }
     }
 })
 
-export const {SetCryptoPrice,SetCryptoImg} = userSlice.actions
+export const {data} = userSlice.actions
 export const store = configureStore({
     reducer: {
         sinaExchange: userSlice.reducer
