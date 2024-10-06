@@ -8,7 +8,7 @@ interface Value {
     price: number;
 }
 
-export const Slide21 = () => {
+export const Slide22 = () => {
     const selector = useSelector((state: any) => state.sinaExchange)
     return (
         <>
@@ -17,7 +17,7 @@ export const Slide21 = () => {
                 <div className="flex justify-center items-center gap-20">
                     {selector.cryptoData.map((value: Value, index: number) => (
                         <>
-                            {index < 3 &&
+                            {index >= 3 &&
                                 <CryptoCart key={index} value={value}/>
                             }
                         </>

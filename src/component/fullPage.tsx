@@ -12,8 +12,8 @@ export const FullPage = () => (
         navigation
         slidesNavigation={true}
         controlArrows={true}
-        controlArrowsHTML={["<div class=\"my-arrow\"><i class=\"fa-solid fa-chevron-left fa-4x\" style=\"color: #fff;\"></i><\/div>",
-                            "<div class=\"my-arrow\"><i class=\"fa-solid fa-chevron-right fa-4x\" style=\"color: #fff;\"></i><\/div>"]} 
+        controlArrowsHTML={["<div class=\"my-arrow\"><i class=\"fa-solid fa-chevron-left fa-4x\" style=\"color: #fff; padding-left: 30px; font-size: 80px;\"></i><\/div>",
+                            "<div class=\"my-arrow\"><i class=\"fa-solid fa-chevron-right fa-4x\" style=\"color: #fff; padding-right: 30px; font-size: 80px;\"></i><\/div>"]}
         scrollingSpeed={1000}
         render={({ state, fullpageApi }) => {
 

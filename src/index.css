@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+.acss-futjo7{
+  border-radius: 16px;
+  font-size: 20px;
+  padding: 22px;
+}
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

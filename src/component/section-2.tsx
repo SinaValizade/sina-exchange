@@ -9,6 +9,7 @@ import xrpLogo from "../files/cryptos/XRP.png";
 import adaLogo from "../files/cryptos/cardano.png";
 import ltcLogo from "../files/cryptos/litecoin.png";
 import dogeLogo from "../files/cryptos/dogecoin.png";
+import {Slide22} from "./slide2-2";
 
 export const Section2 = () => {
 
@@ -98,7 +99,7 @@ export const Section2 = () => {
         <>
             <section className="bg-blue-600 h-full">
                 <div className="slide"><Slide21/></div>
-                <div className="slide">Slide 2.2</div>
+                <div className="slide"><Slide22/></div>
             </section>
         </>
     );
